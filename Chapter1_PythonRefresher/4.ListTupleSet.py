@@ -3,6 +3,7 @@ l = ["Name1", "Name2", "Name2"]
 print(l)
 
 # Tuple: Same as list. But this is immutable i.e. we can't modify a tuples. Guarantee the order of the list.
+# Kind of concept of Java ENUM
 t = ("Name1", "Name2", "Name2")
 print(t)
 

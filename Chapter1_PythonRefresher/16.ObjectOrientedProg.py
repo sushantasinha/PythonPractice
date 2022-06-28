@@ -35,6 +35,9 @@ class Person:
             self):  # wrapper method. __repr__ is for developers, __str__ is for customers. __repr__ goal is to be unambiguous. __str__ goal is to be readable.
         return f"<Person {self.name}, {self.age}>"
 
+    # Now if you go by the official python documentation – the __str__ is used to find the “informal”(readable) string representation
+    # of an object whereas __repr__ is used to find the “official” string representation of an object.
+
 
 person = Person("Bob", 25)
 print(person)  # if we want to see reponse of __repr__, then commented out __str__
@@ -76,7 +79,7 @@ class Book:
 
     @classmethod
     def hardcover(cls, name: str, page_weight: str) -> "Book":
-        return Book(name, Book.TYPES[0], page_weight + 100)
+        return cls(name, Book.TYPES[0], page_weight + 100)
 
     @classmethod
     # Please see the return type a "Book" instead of Book (without code).

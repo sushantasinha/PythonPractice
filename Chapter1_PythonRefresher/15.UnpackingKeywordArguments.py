@@ -1,10 +1,13 @@
+# ***********
+# https://www.geeksforgeeks.org/args-kwargs-python/
+
 def named(**args):
     print(args) # Output will be dictionary. so normal to dictionary if we used here.
 named(name="Bob", age=25) # named param
 
 
 def named1(*args):
-    print(args) # Output will be touple
+    print(args) # Output will be tuple
 named1("Bob", 25) # normal param
 
 
