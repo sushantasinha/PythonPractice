@@ -6,7 +6,7 @@ hello()
 
 # Valid code but wont work as like 9 will call line 8
 # def print():
-#    print("...")
+#    print("...") # it is considered our print() not build in print()
 # print()
 
 friends = ["Rob", "Bob"]

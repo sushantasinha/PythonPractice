@@ -1,17 +1,25 @@
 def named(**args):
-    print(args)
+    print(args) # Output will be dictionary. so normal to dictionary if we used here.
+named(name="Bob", age=25) # named param
 
 
-named(name="Bob", age=25)
+def named1(*args):
+    print(args) # Output will be touple
+named1("Bob", 25) # normal param
+
 
 
 def named2(name, age):
     print(name)
 
-
 details = {'name': 'Bob', 'age': 25}
 
+# so dictionary to normal if we used here.
 named2(**details) # please note details MUST be a dictionary
+
+
+print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+
 
 def another_method(**args):
     named(**args)
