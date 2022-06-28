@@ -35,6 +35,8 @@ s.remove("Name1")
 print(s)
 
 # Advanced sets operations
+
+print("Advanced sets operations::::::::::::::::::::::")
 all_friends = {"friend1", "friend2", "friend3"}
 abroad_friends = {"friend1", "friend3"}
 local_friends = all_friends.difference(abroad_friends)
@@ -47,7 +49,8 @@ print(abroad_friends.union(local_friends))
 # Set Intersection
 art = {"name1", "name2", "name3"}
 science = {"name1", "name3", "name4"}
-print(art.intersection(science))
+both = art.intersection(science)
+print(both)
 
 my_list = [70, 20, 10]
 
