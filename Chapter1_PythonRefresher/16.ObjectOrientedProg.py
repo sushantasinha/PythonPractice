@@ -85,7 +85,7 @@ class Book:
     # Please see the return type a "Book" instead of Book (without code).
     # This is needed as Book class definition is NOT completed yet and we are using it
     # I.e. we are taking Book ref from within Book class
-    # If return type say BookShelf then douple quite is not needed
+    # If return type say BookShelf then double quote is not needed
     def paperback(cls, name: str, page_weight: str) -> "Book":
         return cls(name, cls.TYPES[1], page_weight)
 

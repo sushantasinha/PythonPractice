@@ -11,7 +11,7 @@ print(mymodule.divide(10, 2))
 #print("Import.py", __name__)
 #print(divide(10, 2))
 
-# How does python knows where is my mymodule is? And: 'sys' where Pythin will look to find file to import
+# How does python knows where is my mymodule is? Ans: 'sys' where python will look to find file to import
 # Sequence: 1st Loc is the location where the file present, second is classpath and so on...
 print(sys.path)
 print(sys.modules)
