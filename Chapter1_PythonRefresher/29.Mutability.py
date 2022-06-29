@@ -8,15 +8,24 @@ a.append(10)
 print(a)
 print(b)
 
+print("LIST:::, as it is mutable, so it created 2 separate lists")
 a = []
 b = []
-
 print(id(a))
 print(id(b))
 
+
+print("TUPLE:::, as immeutable, it create only 1 and referred from both a and b")
+a = ()
+b = ()
+print(id(a))
+print(id(b))
+
+print("£££££££££££££££££")
+
 # if we try to modify a tuple, will create a new tuple. immutable.
 
-# if a integer is create it wont create another one. immutable.
+# if a integer is created it wont create another one. immutable.
 a = 20
 b = 20
 
@@ -31,12 +40,16 @@ print(id(a))
 print(a)
 print(b)
 
+print("£££££££££££££££££")
+
 a = "Hello"
 b = a
 a += " World"
 
 print(a)
 print(b)
+
+print("£££££££££££££££££")
 
 # -----------------------------------------
 
@@ -65,8 +78,10 @@ print(rolf.grades)  # Rolf got rating even if he did not take exam!!!
 # but there won't be any issues if we pass grede value as well instead of using default one or use as below:
 
 
+#Or we can use OPTIONAL here
+
 class StudentAnother:
-    def __init__(self, name: str, grades=None):  # this is bad. Never use mutable value as default vale
+    def __init__(self, name: str, grades=None):  # this is bad. Never use mutable value as default value
         if grades is None:
             grades = []  # or self.grades = grades or []
         self.name = name
