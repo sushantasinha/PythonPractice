@@ -11,7 +11,7 @@ def make_secure(func): # This is decorator
     return secure_function
 
 
-@make_secure
+@make_secure # decorator. Improved code than 25.Decorator.py
 def get_admin_password():
     return "1234"
 

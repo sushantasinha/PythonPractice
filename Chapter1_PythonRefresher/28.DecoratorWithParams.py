@@ -9,9 +9,7 @@ def make_secure(access_level):
                 return func(*args, **kwargs)
             else:
                 return f"No {access_level} permissions for {user['username']}."
-
         return secure_function
-
     return decorator
 
 
