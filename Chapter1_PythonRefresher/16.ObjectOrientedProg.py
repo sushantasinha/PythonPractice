@@ -1,7 +1,8 @@
 class Student:
     name1 = "zzz"
 
-    def __init__(self, name):  # like constructor
+    def __init__(self, name):  # like constructor #...
+        print("CONS...........")
         # self.name = "Sushanta"  # The self is used to represent the instance of the class.
         self.name = name
         self.grades = (10, 20, 30)
@@ -19,19 +20,19 @@ print(student.name2)
 print(student)
 
 
-# Any method name __<method name>__(): is magic called method, these are provided by python
+# Any method name __<method name>__(): is magic called method, these are provided by python #...
 
 
 class Person:
 
-    def __init__(self, name, age):  # like constructor
+    def __init__(self, name, age):  # like constructor #...
         self.name = name
         self.age = age
 
-    def __str__(self):  # like toString()
+    def __str__(self):  # like toString() #...
         return f"Name is {self.name} and age is {self.age}"
 
-    def __repr__(
+    def __repr__( #...
             self):  # wrapper method. __repr__ is for developers, __str__ is for customers. __repr__ goal is to be unambiguous. __str__ goal is to be readable.
         return f"<Person {self.name}, {self.age}>"
 
@@ -41,21 +42,24 @@ class Person:
 
 person = Person("Bob", 25)
 print(person)  # if we want to see reponse of __repr__, then commented out __str__
+# If __str__ not there, will use __repr__ #...
 
 
-# We can __str__, __init__ etc manually as well like, persom.___init()
+# We can __str__, __init__ etc manually as well like, persom.___init() __repr__ #...
 
+# A class method takes cls as the first parameter while a static method needs no specific parameters #...
 
+#...
 class ClassTest:
     def instance_method(self):  # self if the reference of the obj
         print(f"Called instance_method of {self}")
 
-    @classmethod
-    def class_method(cls):  # cls is reference of ClassTest. used mostly for Factory.
+    @classmethod # similar like static method but it takes cls as the first parameter #...
+    def class_method(cls):  # cls is reference of ClassTest. used mostly for Factory. #...
         print(f"Called class_method of {cls}")
 
     @staticmethod
-    def static_method():  # don't get cls or self i.e. does not have cls reference or instance reference
+    def static_method():  # don't get cls or self i.e. does not have cls reference or instance reference  #...
         print("Called static_method")
 
 
@@ -64,7 +68,7 @@ test.instance_method()  # same as ClassTest.instance_method(test)
 ClassTest.instance_method(test)
 ClassTest.class_method()
 ClassTest.static_method()
-
+#......
 
 class Book:
     TYPES = ("hardcover", "paperback")
@@ -78,7 +82,7 @@ class Book:
         return f"<Book {self.name}, {self.book_type}, weight {self.weight}g>"
 
     @classmethod
-    def hardcover(cls, name: str, page_weight: str) -> "Book":
+    def hardcover(cls, name: str, page_weight: str) -> "Book":  #... see type like str is mentioned and return type
         return cls(name, Book.TYPES[0], page_weight + 100)
 
     @classmethod

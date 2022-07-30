@@ -1,5 +1,5 @@
-class TooManyPageReadError (ValueError): # ValueError, TypeError, Exception, or any other build in error
-    pass
+class TooManyPageReadError (ValueError): # ValueError, TypeError, Exception, or any other build in error #...
+    pass #...
 
 
 

@@ -13,7 +13,7 @@ class Device:
         print("Disconnected")
 
 
-class Printer(Device):
+class Printer(Device): # inheritance #...
     def __init__(self, name, connected_by, capacity):
         super().__init__(name, connected_by)
         self.capacity = capacity

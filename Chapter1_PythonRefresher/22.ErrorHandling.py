@@ -1,13 +1,13 @@
 def divide(numerator, denominator):
     if denominator == 0:
-        raise ZeroDivisionError("Denominator can not be zero")
+        raise ZeroDivisionError("Denominator can not be zero") #...
     return numerator / denominator
 
 
-try:
+try:#...
     average = divide(10, 0)
     print(f"Result: {average}")
-except ZeroDivisionError as e:
+except ZeroDivisionError as e:#...
     print(e)
     print("Error occurred: ZeroDivisionError.")
 
@@ -19,7 +19,7 @@ except ZeroDivisionError as e:
     print("Error occurred: ZeroDivisionError.")
 except ValueError:
     print("Error occurred: ValueError.")
-else:  # if no error happened then use this section
+else:  # if no error happened then use this section #...
     print(f"Result: {average}")
-finally:
+finally:#...
     print("In Finally")

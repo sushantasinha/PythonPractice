@@ -9,23 +9,30 @@ print(a)
 print(b)
 
 print("LIST:::, as it is mutable, so it created 2 separate lists")
+
+#...
 a = []
 b = []
 print(id(a))
 print(id(b))
-
+#......
 
 print("TUPLE:::, as immeutable, it create only 1 and referred from both a and b")
+#...
 a = ()
 b = ()
 print(id(a))
 print(id(b))
+#......
 
 print("£££££££££££££££££")
 
-# if we try to modify a tuple, will create a new tuple. immutable.
+# if we try to modify a tuple, will create a new tuple. immutable. #...
 
-# if a integer is created it wont create another one. immutable.
+# if a integer is created it wont create another one. immutable.  #...
+
+#...
+
 a = 20
 b = 20
 
@@ -40,6 +47,8 @@ print(id(a))
 print(a)
 print(b)
 
+
+
 print("£££££££££££££££££")
 
 a = "Hello"
@@ -50,6 +59,8 @@ print(a)
 print(b)
 
 print("£££££££££££££££££")
+
+#......
 
 # -----------------------------------------
 
