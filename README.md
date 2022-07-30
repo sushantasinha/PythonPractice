@@ -65,7 +65,12 @@ call BUSSR service we need to pass JWT
 ![Flask](8.PNG)
 
 
+### Numpy, Pandas:  
 
+USed for Daya science.  
+NumPy: Arrays (vectors and matrices), vectors are strictly 1d array and matrices are 2d (but matrix can still hv one row and one column)  
+Pandas: Series, Data Frame  
+ 
 
 
 
