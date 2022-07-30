@@ -4,9 +4,9 @@ def add_old(x, y):
 
 print(add_old(1, 2))
 
-add_new = lambda x, y: x + y
-print(add_new(1, 2))
-print((lambda x, y: x + y)(1, 2))
+add_new = lambda x, y: x + y  #...
+print(add_new(1, 2)) #...
+print((lambda x, y: x + y)(1, 2)) #...
 
 
 def double(x):

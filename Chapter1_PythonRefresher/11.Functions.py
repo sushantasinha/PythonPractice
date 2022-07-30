@@ -1,5 +1,7 @@
+#...
 def hello():
     print("Hello!")
+#......
 
 
 hello()
@@ -19,7 +21,7 @@ def add_friend():
     # print(friends)
 
     # But friends = friends + [another_friend] won't work. to get this worked:global friends
-    global friends
+    global friends #...
     friends = friends + [another_friend]
     print(friends)
 
@@ -32,16 +34,16 @@ def print_response(x, y):
 
 
 print_response("Hello", "World!")
-print_response(y="World", x="Hello")
+print_response(y="World", x="Hello") #...
 
 
-def print_response_default(x, y="World..."):
+def print_response_default(x, y="World..."): #...
     print(f"Result: {x} {y}")
 
 
 print_response_default("Hello")
 
-# Default param value must be at end after non default value i.e print_response_default(x= 5, y) won't work
+# Default param value must be at end after non default value i.e print_response_default(x= 5, y) won't work #...
 
 default_y = 3
 
@@ -55,7 +57,7 @@ default_y = 4
 add(2)  # default_y wont change after set that to function
 
 
-# Note: None is a special value in Python: no value, special value
+# Note: None is a special value in Python: no value, special value #...
 
 def add_return(x, y, z):
     return x + y + z

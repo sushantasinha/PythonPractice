@@ -1,5 +1,5 @@
 name = "Sushanta"
-print(f"Hello {name}")
+print(f"Hello {name}") #...
 name = "Tutun"
 print(f"Hello {name}")
 
@@ -12,5 +12,5 @@ print(with_name)
 print(with_name2)
 
 
-another = "Hello {} and {}".format("zzzzzzzzzzzzzzzzzz", "xxxxxxxxxx")
-print(another)
+another = "Hello {} and {}".format("zzzzzzzzzzzzzzzzzz", "xxxxxxxxxx") #...
+print(another) #...

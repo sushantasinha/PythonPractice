@@ -1,3 +1,4 @@
+#...
 # 1
 
 print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
@@ -42,7 +43,7 @@ def multiply_another(args):
 
 def apply(*args, operator):
     if operator == "*":
-        # print(args)
+        print(f"@@@@@@@@@@@@@@@@@@@@@ {args}");
         print(f":::::::::::{multiply_another(args)}")
         return multiply(*args)
         # return multiply(*args) try this

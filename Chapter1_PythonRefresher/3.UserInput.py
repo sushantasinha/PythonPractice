@@ -1,8 +1,8 @@
 name = input("Enter your name:")
 print(f"Hello {name}")
 
-size_input = input("How big is your house (in sq. feet): ") # always gives in String, so need conversion here
-size_feet = float(size_input)
+size_input = input("How big is your house (in sq. feet): ") # always gives in String, so need conversion here #...
+size_feet = float(size_input) #...
 size_meter = size_feet / 10.8
 print(f"{size_feet} square feet is {size_meter} square meters.")
 print(f"{size_feet} square feet is {size_meter:.2f} square meters.")

@@ -1,3 +1,5 @@
+#...
+
 # List: Can modify. Guarantee the order of the list.
 l = ["Name1", "Name2", "Name2"]
 print(l)
@@ -40,6 +42,11 @@ print(s)
 print("Advanced sets operations::::::::::::::::::::::")
 all_friends = {"friend1", "friend2", "friend3"}
 abroad_friends = {"friend1", "friend3"}
+
+print(abroad_friends.difference(all_friends))
+print(all_friends.difference(abroad_friends))
+
+print(":::::::::::::::::::::::")
 local_friends = all_friends.difference(abroad_friends)
 print(local_friends)
 print(abroad_friends.difference(all_friends))
@@ -56,7 +63,7 @@ print(both)
 my_list = [70, 20, 10]
 
 # Create a tuple with single element
-my_tuple = (15,) # or just 15,
+my_tuple = (15,) # or just 15, \If single element, then need to append comma
 print(my_tuple[0])
 
 # x = (1,2) and x = 1,2 => both are tuple -> but bracket is needed if we use tuple inside list -> x = [(1,2)]
