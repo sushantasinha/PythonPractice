@@ -1,4 +1,4 @@
-#...
+#... $$$$$$
 def hello():
     print("Hello!")
 #......
@@ -43,6 +43,7 @@ def print_response_default(x, y="World..."): #...
 
 print_response_default("Hello")
 
+# $$$$$$
 # Default param value must be at end after non default value i.e print_response_default(x= 5, y) won't work #...
 
 default_y = 3
@@ -57,7 +58,7 @@ default_y = 4
 add(2)  # default_y wont change after set that to function
 
 
-# Note: None is a special value in Python: no value, special value #...
+# Note: None is a special value in Python: no value, special value #... $$$$$$
 
 def add_return(x, y, z):
     return x + y + z

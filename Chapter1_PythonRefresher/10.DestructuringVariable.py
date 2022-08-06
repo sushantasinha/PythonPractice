@@ -8,7 +8,7 @@ print(y)
 # x = [(5,11)] -> a list, inside which i tuple
 
 
-x, y = 5, 11  # tuple de-structured or decomposed into variables #...
+x, y = 5, 11  # tuple de-structured or decomposed into variables #... $$$$$$
 print(x)
 
 t = 10, 20
@@ -34,7 +34,7 @@ for name, _ in friends: # variable name can be _ but as per standard, we define 
 
 print("::::::::::::::::::::::::::::::::::")
 
-#...
+#... $$$$$$
 head, *tail = [1, 2, 3, 4, 5]
 print(head)
 print(tail)

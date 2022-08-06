@@ -54,7 +54,7 @@ class ClassTest:
     def instance_method(self):  # self if the reference of the obj
         print(f"Called instance_method of {self}")
 
-    @classmethod # similar like static method but it takes cls as the first parameter #...
+    @classmethod # similar like static method but it takes cls as the first parameter #... $$$$$$
     def class_method(cls):  # cls is reference of ClassTest. used mostly for Factory. #...
         print(f"Called class_method of {cls}")
 
